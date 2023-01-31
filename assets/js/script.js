@@ -10,6 +10,9 @@ $(document).ready(function(){
     console.log(value)
     localStorage.setItem(timeID, value); //Setting up the local storage
     $(".notification").addClass('show');
+    setTimeout(function(){
+        $(".notification").removeClass('show'); 
+    }, 15000)
     })
 
 // Adding a function to colour code past, present and future timeblocks     
@@ -33,8 +36,8 @@ function timer(){
 }
 timer();
 
-let interval = setInterval(timer, 50000);
+let interval = setInterval(timer, 15000);
 
-// Setting uo the current date
+// Setting up the current date
 $("#currentDay").text(moment().format("dddd, MMMM, Do"))
 })

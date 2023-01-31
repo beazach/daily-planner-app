@@ -28,8 +28,10 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <section class="text-center notification" id="notification">Appointment added to <code>localstorage</code></section>
     <div class="container">
+      <section class="text-center notification" id="notify">
+        <div class="col-md-10 description">Appointment added to <code>localstorage</code></div>
+      </section>
       <!-- Timeblocks go here -->
       <!--Setting up sections of the planner-->
       <section id="hour-9" class="row time-block">
@@ -95,7 +97,6 @@
         <textarea class="col-md-10 description"></textarea>
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </section>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
